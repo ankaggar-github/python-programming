@@ -28,53 +28,43 @@ while True:
         print(compMove)
         print("It is a tie!")
         Ties += 1
-        continue
     elif playerMove == 'p' and compMove == 'ROCK':
         print("PAPER versus ...")
         print(compMove)
         print("You Win!")
         Wins += 1
-        continue
     elif playerMove == 'p' and compMove == 'SCISSORS':
         print("PAPER versus ...")
         print(compMove)
         print("You Lose!")
         Losses += 1
-        continue
     elif playerMove == 'r' and compMove == 'ROCK':
         print("ROCK versus ...")
         print(compMove)
         print("It is a tie!")
         Ties += 1
-        continue
     elif playerMove == 'r' and compMove == 'SCISSORS':
         print("ROCK versus ...")
         print(compMove)
         print("You Win!")
         Wins += 1
-        continue
     elif playerMove == 'r' and compMove == 'PAPER':
         print("ROCK versus ...")
         print(compMove)
         print("You Lose!")
         Losses += 1
-        continue
     elif playerMove == 's' and compMove == 'SCISSORS':
         print("SCISSORS versus ...")
         print(compMove)
         print("It is a tie!")
         Ties += 1
-        continue
     elif playerMove == 's' and compMove == 'PAPER':
         print("SCISSORS versus ...")
         print(compMove)
         print("You Win!")
         Wins += 1
-        continue
     elif playerMove == 's' and compMove == 'ROCK':
         print("SCISSORS versus ...")
         print(compMove)
         print("You Lose!")
         Losses += 1
-        continue
-
