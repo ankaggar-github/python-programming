@@ -13,58 +13,46 @@ while True:
             break # Break out from the player input loop
         print('Type one of r, p, s, or q.')
     
-    # Pick a random move from computer
+    #Print Player Move
+    if playerMove == 'r':
+        print("ROCK versus ...")
+    elif playerMove == 'p':
+        print("PAPER versus ...")
+    elif playerMove == 's':
+        print("SCISSORS versus ...")
+
+    # Pick a random move from computer and print Computer Move
     num = random.randint(1,3)
     compMove=''
     if num == 1:
-        compMove = 'ROCK'
+        compMove = 'r'
+        print('ROCK')
     elif num == 2:
-        compMove = 'PAPER'
+        compMove = 'p'
+        print('PAPER')
     else:
-        compMove = 'SCISSORS'
+        compMove = 's'
+        print('SCISSORS')
 
-    if playerMove == 'p' and compMove == 'PAPER':
-        print("PAPER versus ...")
-        print(compMove)
+    # Record Win/Lose/Tie
+    if playerMove == compMove:
         print("It is a tie!")
         Ties += 1
-    elif playerMove == 'p' and compMove == 'ROCK':
-        print("PAPER versus ...")
-        print(compMove)
+    elif playerMove == 'p' and compMove == 'r':
         print("You Win!")
         Wins += 1
-    elif playerMove == 'p' and compMove == 'SCISSORS':
-        print("PAPER versus ...")
-        print(compMove)
+    elif playerMove == 'p' and compMove == 's':
         print("You Lose!")
         Losses += 1
-    elif playerMove == 'r' and compMove == 'ROCK':
-        print("ROCK versus ...")
-        print(compMove)
-        print("It is a tie!")
-        Ties += 1
-    elif playerMove == 'r' and compMove == 'SCISSORS':
-        print("ROCK versus ...")
-        print(compMove)
+    elif playerMove == 'r' and compMove == 's':
         print("You Win!")
         Wins += 1
-    elif playerMove == 'r' and compMove == 'PAPER':
-        print("ROCK versus ...")
-        print(compMove)
+    elif playerMove == 'r' and compMove == 'p':
         print("You Lose!")
         Losses += 1
-    elif playerMove == 's' and compMove == 'SCISSORS':
-        print("SCISSORS versus ...")
-        print(compMove)
-        print("It is a tie!")
-        Ties += 1
-    elif playerMove == 's' and compMove == 'PAPER':
-        print("SCISSORS versus ...")
-        print(compMove)
+    elif playerMove == 's' and compMove == 'p':
         print("You Win!")
         Wins += 1
-    elif playerMove == 's' and compMove == 'ROCK':
-        print("SCISSORS versus ...")
-        print(compMove)
+    elif playerMove == 's' and compMove == 'r':
         print("You Lose!")
         Losses += 1
