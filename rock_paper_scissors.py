@@ -41,7 +41,6 @@ while True:
         print("You Lose!")
         Losses += 1
         continue
-
     elif playerMove == 'r' and compMove == 'ROCK':
         print("ROCK versus ...")
         print(compMove)
@@ -60,7 +59,6 @@ while True:
         print("You Lose!")
         Losses += 1
         continue
-
     elif playerMove == 's' and compMove == 'SCISSORS':
         print("SCISSORS versus ...")
         print(compMove)
@@ -79,13 +77,4 @@ while True:
         print("You Lose!")
         Losses += 1
         continue
-
-
-
-    
-
-    
-    
-
-
 
